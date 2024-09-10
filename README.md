@@ -124,12 +124,20 @@ cd flask-calculadora
 ```bash
 python3 -m venv venv
 source venv/bin/activate
+sudo apt update && sudo apt upgrade -y
 pip install -r requirements.txt
+pip3 install --upgrade pip
+pip install --upgrade pip
+
 ```
 
 6. **Execute o Flask na EC2 (tornando-o acessível publicamente):**
 
 ```bash
+pip install flask
+python app.py
+
+
 flask run --host=0.0.0.0
 ```
 
