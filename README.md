@@ -13,13 +13,13 @@ Este projeto é uma aplicação web simples de calculadora criada usando Flask, 
 ```
 flask-calculadora/
 │
-├── app.py                 
-├── venv/                  
-├── templates/             
-│   └── index.html         
-└── static/                
-    ├── script.js         
-    └── styles.css        
+├── app.py
+├── venv/
+├── templates/
+│   └── index.html
+└── static/
+├── script.js
+└── styles.css
 ```
 
 ## Pré-requisitos
