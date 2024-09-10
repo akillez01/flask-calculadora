@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora Star Wars</title>
+    <title>Calculadora</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     <script src="{{ url_for('static', filename='script.js') }}" defer></script>
 </head>
 <body>
-    <div class="calculator">
+    <div class="calculator" style="background-image: url('{{ url_for('static', filename='img/img-back.jpg') }}'); background-size: cover;">
         <div class="display" id="display">0</div>
         <div class="buttons">
             <button class="btn btn-dark" onclick="clearDisplay()">C</button>

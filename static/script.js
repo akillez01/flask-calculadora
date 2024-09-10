@@ -38,15 +38,16 @@ function calculate() {
             result = num1 * num2;
             break;
         case '/':
-            result = num1 / num2;
+            result = num2 !== 0 ? num1 / num2 : 'Error';  // Verifica divisão por zero
             break;
         default:
             return;
     }
 
-    display.innerText = result.toString().slice(0, 10);  // Limita a 10 dígitos
+    // Atualiza o display com resultado ou mensagem de erro
+    display.innerText = (result === 'Error') ? 'Error' : result.toString().slice(0, 10);
     previousInput = '';
-    currentInput = result.toString();
+    currentInput = (result === 'Error') ? '' : result.toString();
     currentOperator = '';
 }
 
