@@ -63,12 +63,12 @@ body {
 }
 
 .btn-operator {
-  background-color: #f39c12;
+  background-color: #317509;
   color: #000;
 }
 
 .btn-equals {
-  background-color: #27ae60;
+  background-color: #06833a;
   grid-column: span 4;
 }
 
